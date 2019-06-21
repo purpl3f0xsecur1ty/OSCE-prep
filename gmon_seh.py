@@ -2,7 +2,7 @@
 
 #=====================================#
 # Vulnserver GMON SEH buffer overflow #
-#           Author: purpl3f0x		  #
+#           Author: purpl3f0x         #
 #=====================================#
 
 import socket
