@@ -1,3 +1,4 @@
+### The fuzzer I used for HP NNM ###
 #!/usr/bin/env python
 # Designed for use with boofuzz v0.0.9
 from boofuzz import *
