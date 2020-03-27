@@ -12,6 +12,7 @@ for x in bytearray(shellcode) :
 	# XOR Encoding
 	y = x^0xAA
 	encoded += '\\x'
+	# '%02x' formats string as a two-digit hex number
 	encoded += '%02x' % y
 
 	encoded2 += '0x'
